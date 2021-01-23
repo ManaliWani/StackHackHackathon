@@ -1,0 +1,315 @@
+
+<!--
+<nav class="navbar navbar-expand bg-transperent">
+    
+    <ul class="navbar-nav mr-auto" routerLinkActive="active">
+      <li class="nav-item">
+        <a href="/home" class="nav-link font-weight-bold" routerLink="home" >Home </a>
+      </li>
+      <div class="list-item">
+          <i class="material-icons">fastfood</i>
+          Breakfast
+      </div>
+      <li class="nav-item" *ngIf="showAdminBoard">
+        <a href="/admin" class="nav-link font-weight-bold" routerLink="admin">Admin Board</a>
+      </li>
+      <li class="nav-item">
+        <a href="/user" class="nav-link font-weight-bold" *ngIf="isLoggedIn" routerLink="user">User</a>
+      </li>
+    </ul>
+
+    <ul class="navbar-nav ml-auto" *ngIf="!isLoggedIn">
+      <li class="nav-item">
+        <a href="/register" class="nav-link font-weight-bold" routerLink="register">Sign Up</a>
+      </li>
+      
+    </ul>
+
+    <ul class="navbar-nav ml-auto" *ngIf="isLoggedIn">
+      <li class="nav-item">
+        <a href="/profile" class="nav-link font-weight-bold" routerLink="profile">{{ username }}</a>
+      </li>
+      <li class="nav-item">
+        <a href class="nav-link font-weight-bold" (click)="logout()">LogOut</a>
+      </li>
+    </ul>
+  </nav>
+-->
+
+
+<!--<div class="float-container">
+  <div class="float-child1">
+
+<div class="page-container col-sm-6 col-md-6 col-xs-6">
+  <div class="sidebar">
+    <div class="list-items">
+      <div class="list-item">
+          <i class="material-icons">fastfood</i>
+          Breakfast
+      </div>
+      <div class="list-item">
+          <i class="material-icons">local_dining</i>
+          Lunch
+      </div>
+      <div class="list-item">
+          <i class="material-icons">restaurant</i>
+          Combo Meal
+      </div>
+      <div class="list-item">
+          <i class="material-icons">restaurant</i>
+          Starters
+      </div>
+      <div class="list-item">
+          <i class="material-icons">restaurant</i>
+          Desserts
+      </div>
+      <div class="list-item">
+          <i class="material-icons">local_bar</i>
+          Drinks & Beverages
+      </div>
+      
+      <div class="" style="padding-left: 20px;padding-top: 50px; color: white"> Total Price : {{totalPrice}}</div>
+    
+    </div>
+       
+    
+  </div>
+</div>
+</div>
+
+<div class="float-child2">
+    Hello
+</div>
+</div>-->
+
+
+
+
+
+<!--<p>
+    <a class="btn btn-primary" data-toggle="collapse" href="user#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+      Link with href
+    </a>
+    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+      Button with data-target
+    </button>
+  </p>
+  <div id="collapseExample" class="collapse" >
+    <div class="card card-body">
+      Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+    </div>
+  </div>
+
+  <a href="user#try">Click</a>
+  <p id="try"> Well DONE </p>-->
+
+
+
+
+  
+   
+
+          <div class="form-group row">
+
+            <div class="form-group col-md-4 fixed">  
+
+             <div class="page-container col-sm-6 col-md-6 col-xs-6">
+                <div class="sidebar">
+                  <div class="list-items">
+                    <div class="list-item">
+                        <i class="material-icons">fastfood</i>
+                        <a href="/user#breakfast">Breakfast</a>
+                    </div>
+                    <div class="list-item">
+                        <i class="material-icons">local_dining</i>
+                        <a href="/user#lunch">Lunch</a>
+                    </div>
+                    <div class="list-item">
+                        <i class="material-icons">restaurant</i>
+                        <a href="/user#combo">Combo Meal</a>
+                    </div>
+                    <div class="list-item">
+                        <i class="material-icons">restaurant</i>
+                        Starters
+                    </div>
+                    <div class="list-item">
+                        <i class="material-icons">restaurant</i>
+                        Desserts
+                    </div>
+                    <div class="list-item">
+                        <i class="material-icons">local_bar</i>
+                        Drinks & Beverages
+                    </div>
+                    
+                    <div *ngIf="totalPrice!=0" style="padding-left: 20px;padding-top: 50px; color: white"> Total Price : {{totalPrice}}</div>
+                  
+                  </div>
+                </div>
+              </div>
+
+
+            </div>
+            
+            
+
+            <div class="form-group col-md-6" style="color: white;">  
+              
+              <div id="breakfast">
+                <br><br><br>
+                
+                <h2><i class="material-icons">fastfood</i> BREAKFAST</h2>
+                <ul  id="breakfast" class="list-group">
+                    
+                  <div class="row grid">
+
+                        <div class="col list-group-item d-flex justify-content-between align-items-center">Vanilla Ice Cream</div>
+                        <div class="col-lg-3">50/-</div>
+                        <div class="col-auto form-check mb-2">
+                              <input class="form-check-input" type="checkbox" id="autoSizingCheck">
+                              <label class="form-check-label" for="autoSizingCheck">Add</label>
+                            
+                        </div>
+                        
+                  </div>
+
+                  <div class="row grid">
+
+                      <div class="col list-group-item d-flex justify-content-between align-items-center">Sandwiches</div>
+                      <div class="col-lg-3">50/-</div>
+                      <div class="col-auto form-check mb-2">
+                            <input class="form-check-input" type="checkbox" id="autoSizingCheck">
+                            <label class="form-check-label" for="autoSizingCheck">Add</label>
+                          
+                      </div>
+                      
+                    </div>
+
+                <div class="row grid">
+                    <div class="col list-group-item d-flex justify-content-between align-items-center">
+                      Vanilla Ice Cream
+                    </div>
+                    <div class="col-lg-3">
+                      50/-
+                    </div>
+                    <div class="col col-lg-1">
+                      10
+                    </div>
+              </div>
+
+                  </ul>
+                </div>
+
+
+                  <div id="lunch">
+                    <br><br><br>
+                    <h2>LUNCH</h2>
+                  <ul  id="lunch" class="list-group">
+                      <li class="list-group-item d-flex justify-content-between align-items-center">
+                        LUNCH
+                        <span class="badge badge-primary badge-pill">14</span>
+                      </li>
+                      <li class="list-group-item d-flex justify-content-between align-items-center">
+                        Dapibus ac facilisis in
+                        <span class="badge badge-primary badge-pill">2</span>
+                      </li>
+                      <li class="list-group-item d-flex justify-content-between align-items-center">
+                        Morbi leo risus
+                        <span class="badge badge-primary badge-pill">1</span>
+                      </li>
+                    
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        Cras justo odio
+                        <span class="badge badge-primary badge-pill">14</span>
+                      </li>
+                      <li class="list-group-item d-flex justify-content-between align-items-center">
+                        Dapibus ac facilisis in
+                        <span class="badge badge-primary badge-pill">2</span>
+                      </li>
+                      <li class="list-group-item d-flex justify-content-between align-items-center">
+                        Morbi leo risus
+                        <span class="badge badge-primary badge-pill">1</span>
+                      </li>
+                    
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        Cras justo odio
+                        <span class="badge badge-primary badge-pill">14</span>
+                      </li>
+                      <li class="list-group-item d-flex justify-content-between align-items-center">
+                        Dapibus ac facilisis in
+                        <span class="badge badge-primary badge-pill">2</span>
+                      </li>
+                      <li class="list-group-item d-flex justify-content-between align-items-center">
+                        Morbi leo risus
+                        <span class="badge badge-primary badge-pill">1</span>
+                      </li>
+                    </ul>
+                  </div>
+
+                    <br>
+                <div id="combo">
+                  <ul  name="combo" id="combo" class="list-group">
+                      <li class="list-group-item d-flex justify-content-between align-items-center">
+                        COMBO
+                        <span class="badge badge-primary badge-pill">14</span>
+                      </li>
+                      <li class="list-group-item d-flex justify-content-between align-items-center">
+                        Dapibus ac facilisis in
+                        <span class="badge badge-primary badge-pill">2</span>
+                      </li>
+                      <li class="list-group-item d-flex justify-content-between align-items-center">
+                        Morbi leo risus
+                        <span class="badge badge-primary badge-pill">1</span>
+                      </li>
+                    
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        Cras justo odio
+                        <span class="badge badge-primary badge-pill">14</span>
+                      </li>
+                      <li class="list-group-item d-flex justify-content-between align-items-center">
+                        Dapibus ac facilisis in
+                        <span class="badge badge-primary badge-pill">2</span>
+                      </li>
+                      <li class="list-group-item d-flex justify-content-between align-items-center">
+                        Morbi leo risus
+                        <span class="badge badge-primary badge-pill">1</span>
+                      </li>
+                    
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        Cras justo odio
+                        <span class="badge badge-primary badge-pill">14</span>
+                      </li>
+                      <li class="list-group-item d-flex justify-content-between align-items-center">
+                        Dapibus ac facilisis in
+                        <span class="badge badge-primary badge-pill">2</span>
+                      </li>
+                      <li class="list-group-item d-flex justify-content-between align-items-center">
+                        Morbi leo risus
+                        <span class="badge badge-primary badge-pill">1</span>
+                      </li>
+                    </ul>
+                  </div>
+
+                  <ul class="list-group list-group-flush">
+                      <li class="list-group-item">Cras justo odio</li>
+                      <li class="list-group-item">Dapibus ac facilisis in</li>
+                      <li class="list-group-item">Morbi leo risus</li>
+                      <li class="list-group-item">Porta ac consectetur ac</li>
+                      <li class="list-group-item">Vestibulum at eros</li>
+                    </ul>
+              
+             
+              
+              
+            </div>       
+            
+          
+          </div>     
+
+
+          <div *ngIf="totalPrice!=0" class="footer">
+              <p>{{totalPrice}}</p>
+          </div>
+    
+ 
+
+    
